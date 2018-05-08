@@ -1,0 +1,340 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Astylesheet.css">
+    <script src="scriptfile.js"></script>
+	<font id="header">Webapp</font>
+	<font id="header1">Sgpa Converter</font>
+</head>
+<body id="backleft">
+    
+    <p id="headed">
+	</p>
+	
+    <div id="nav">
+	<table>
+	 <ul>
+	 <li><button id="navbutton1" onclick="disapear1()"><font>P-Cycle</font></button></li>
+	 <li><button id="navbutton2" onclick="disapear2()"><font>C-Cycle</font></button></li>
+	 <li><button id="navbutton3" onclick="disapear3()"><font>Result Form</font></button></li>
+	 </ul>
+	</table>
+	</div>
+    <p id="main">
+	<p id="pcycle">
+	<p id="markspcycle1">
+	<table id="table3">
+	<tr height=70%>
+	 <th id="A" height=70%>Subject        </th>
+	 <th id="B" height=70%>External marks </th>
+	 <th id="C" height=70%>Internal marks </th>
+	 <th id="D" height=70%>Submit button  </th>
+	</tr>
+	<tr height=70%>
+	 <td><font id="common1">Math1:</font></td>
+	 <td><input id="math1ext" ></input></td>
+	 <td><input id="math1int"></input></td>
+	 <td><button id="buttonmath1" type=submit onclick="entera()">SUBMIT</button>
+	</tr> 
+	<tr height=70%>
+	 <td><font id="common2">Physics:</font></td>
+	 <td><input id="physicext" ></input></td>
+	 <td><input id="physicint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonphysics" onclick="enterb()">SUBMIT</button></td>
+	</tr height=70%>
+	<tr>
+	 <td><font id="common3">Mechanical:</font></td>
+	 <td><input id="mechext"></input></td>
+	 <td><input id="mechint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonmech" onclick="enterc()">SUBMIT</button></td>
+	</tr>
+	<tr height=70%>
+	 <td><font id="common4">Electrical:</font></td>
+	 <td><input id="elecext"></input></td>
+	 <td><input id="elecint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonelec" onclick="enterd()">SUBMIT</button></td>
+	</tr>
+	<tr height=70%>
+	 <td><font id="common5">Civil:</font></td>
+	 <td><input id="civilext"></input></td>
+	 <td><input id="civilint"></input></td>
+	 <td margin=0;padding=0;><button id="buttoncivil" onclick="entere()">SUBMIT</button></td>
+	</tr>
+	<tr height=70%>
+	 <td><font id="common6">Physics Lab:</font></td>
+	 <td><input id="phylext"></input></td>
+	 <td><input id="phylint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonphyl" onclick="enterf()">SUBMIT</button></td>
+	</tr>
+	<tr height=70%>
+	 <td><font id="common7">workshop Lab:</font></td>
+	 <td><input id="workext"></input></td>
+	 <td><input id="workint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonwork" onclick="enterg()">SUBMIT</button></td>
+	</tr>
+	</table>
+	</p>
+	</p>
+	<p id="ccycle">
+	<p id="marksccycle1">
+	<table id="table4">
+	<tr >
+	 <th id="A" >Subject        </th>
+	 <th id="B" >External marks </th>
+	 <th id="C" >Internal marks </th>
+	 <th id="D" >Submit button  </th>
+	</tr>
+	<tr >
+	 <td ><font>Math2:</font></td>
+	 <td ><input id="math2ext"></input></td>
+	 <td ><input id="math2int"></input></td>
+	 <td  margin=0;padding=0;><button id="buttonmath1" onclick="enterh()">SUBMIT</button>
+	</tr> 
+	<tr>
+	 <td><font>Chemistry:</font></td>
+	 <td><input id="chemext"></input></td>
+	 <td><input id="chemint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonphysics" onclick="enteri()">SUBMIT</button></td>
+	</tr >
+	<tr>
+	 <td><font>CAED:</font></td>
+	 <td><input id="caedext"></input></td>
+	 <td><input id="caedint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonmech" onclick="enterj()">SUBMIT</button></td>
+	</tr>
+	<tr>
+	 <td><font>Electronics:</font></td>
+	 <td><input id="elnext"></input></td>
+	 <td><input id="elnint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonelec" onclick="enterk()">SUBMIT</button></td>
+	</tr>
+	<tr>
+	 <td><font>PCD:</font></td>
+	 <td><input id="pcdext"></input></td>
+	 <td><input id="pcdint"></input></td>
+	 <td margin=0;padding=0;><button id="buttoncivil" onclick="enterl()">SUBMIT</button></td>
+	</tr>
+	 <td><font>Chemistry Lab:</font></td>
+	 <td><input id="chelext"></input></td>
+	 <td><input id="chelint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonphyl" onclick="enterm()">SUBMIT</button></td>
+	</tr>
+	<tr>
+	 <td><font>PCD Lab:</font></td>
+	 <td><input id="pclext"></input></td>
+	 <td><input id="pclint"></input></td>
+	 <td margin=0;padding=0;><button id="buttonwork" onclick="entern()">SUBMIT</button></td>
+	</tr>
+	</table>
+	</p>
+	</p>
+	<p>
+	<p id="result">
+	<font id="font1">P-Cycle</font>
+	<font id="font2">C-Cycle</font>
+	<font id="font3">sgpa(P-cycle):</font>
+	<input id="result1" value=0></input>
+	<font id="font5">sgpa(C-cycle):</font>
+	<input id="result3" value=0></input>
+	<font id="font4">cgpa:</font>
+	<input id="result2" value=0></input>
+	<button id="resultbutton" onclick="calculate()">Calculate</button>
+<div  id="pcycletable" margin=0 padding=0>
+    <table style="width:100%" ></table>
+    <table id="table2">
+      <tr>
+        <th>Subject</th>
+        <th>Credit</th>
+        <th>Ext-Marks</th>
+        <th>Int-Marks</th>
+        <th>Grade</th>
+        <th>Points</th>
+
+      </tr>
+      <tr>
+        <td>Math1</td>
+        <td>4</td>
+        <td id="extm1"></td>
+        <td id="intm1"></td>
+        <td id="grdm1"></td>
+        <td id="pointm1"></td>
+
+      </tr>
+      <tr>
+        <td>Physics</td>
+        <td>4</td>
+        <td id="extp"></td>
+        <td id="intp"></td>
+        <td id="grdp"></td>
+        <td id="pointp"></td>
+
+      </tr>
+      <tr>
+        <td>Mechanical</td>
+        <td>4</td>
+        <td id="extmech"></td>
+        <td id="intmech"></td>
+        <td id="grdmech"></td>
+        <td id="pointmech"></td>
+
+      </tr>
+      <tr>
+        <td>Electrical</td>
+        <td>4</td>
+        <td id="extele"></td>
+        <td id="intele"></td>
+        <td id="grdele"></td>
+        <td id="pointele"></td>
+
+      </tr>
+      <tr>
+        <td>Civil</td>
+        <td>4</td>
+        <td id="extciv"></td>
+        <td id="intciv"></td>
+        <td id="grdciv"></td>
+        <td id="pointciv"></td>
+
+      </tr>
+      <tr>
+        <td>Physics Lab</td>
+        <td>2</td>
+        <td id="extpl"></td>
+        <td id="intpl"></td>
+        <td id="grdpl"></td>
+        <td id="pointpl"></td>
+
+      </tr>
+      <tr>
+        <td>Workshop lab</td>
+        <td>2</td>
+        <td id="extwl"></td>
+        <td id="intwl"></td>
+        <td id="grdwl"></td>
+        <td id="pointwl"></td>
+
+      </tr>
+	   <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+
+      </tr>
+    
+
+    </table>
+    </div>
+	
+<div style="overflow-auto;" id="ccycletable">
+    <table style="width:100%" ></table>
+    <table id="table1">
+      <tr>
+        <th>Subject</th>
+        <th>Credit</th>
+        <th>Ext-Marks</th>
+        <th>Int-Marks</th>
+        <th>Grade</th>
+        <th>Points</th>
+
+      </tr>
+      <tr>
+        <td>Math2</td>
+        <td>4</td>
+        <td id="extm2"></td>
+        <td id="intm2"></td>
+        <td id="grdm2"></td>
+        <td id="pointm2"></td>
+
+      </tr>
+      <tr>
+        <td>Chemistry</td>
+        <td>4</td>
+        <td id="extch"></td>
+        <td id="intch"></td>
+        <td id="grdch"></td>
+        <td id="pointch"></td>
+
+      </tr>
+      <tr>
+        <td>PCD</td>
+        <td>4</td>
+        <td id="extpcd"></td>
+        <td id="intpcd"></td>
+        <td id="grdpcd"></td>
+        <td id="pointpcd"></td>
+
+      </tr>
+      <tr>
+        <td>CAD</td>
+        <td>4</td>
+        <td id="extcad"></td>
+        <td id="intcad"></td>
+        <td id="grdcad"></td>
+        <td id="pointcad"></td>
+
+      </tr>
+      <tr>
+        <td>Electronics</td>
+        <td>4</td>
+        <td id="exteln"></td>
+        <td id="inteln"></td>
+        <td id="grdeln"></td>
+        <td id="pointeln"></td>
+
+      </tr>
+      <tr>
+        <td>Computer Lab</td>
+        <td>2</td>
+        <td id="extcpl"></td>
+        <td id="intcpl"></td>
+        <td id="grdcpl"></td>
+        <td id="pointcpl"></td>
+
+      </tr>
+      <tr>
+        <td>Chemistry lab</td>
+        <td>2</td>
+        <td id="extcl"></td>
+        <td id="intcl"></td>
+        <td id="grdcl"></td>
+        <td id="pointcl"></td>
+
+      </tr>
+      <tr>
+        <td>Environmental Studies</td>
+        <td>1</td>
+        <td id="extenv"></td>
+        <td id="intenv"></td>
+        <td id="grdenv"></td>
+        <td id="pointenv"></td>
+
+      </tr>
+
+    </table>
+    </div>
+	
+   </p>
+  </p>
+  
+	
+</body>
+<footer>
+    <p id="footer">
+    <font id="functext1">Feedback form:</font>
+      <p id="feedbackform">
+       <p id="namefeed">Name:</p>
+       <input type=text id="text1">
+       <p id="namefeed1">Email_id:</p>
+       <input type=emailid id="text2">
+       <p id="namefeed2">Descrpition:</p>
+       <input type=text id="text3">
+       <button id="button1" onclick="myfunction()">Submit</button>
+       </p>
+      <font id="functext">&copy Webapp ,Inc.</font>
+    </p>
+    <font id="fotterpara">
+</footer >
+</html>
