@@ -1,15 +1,8 @@
 
-function myfunction()
-{
-document.getElementById("text1").disabled=true;
-document.getElementById("text2").disabled=true;
-document.getElementById("text3").disabled=true;
-}
-
 function disapear1()
 {
-	document.getElementById("markspcycle1").style.display="block";
-	document.getElementById("marksccycle1").style.display="none";
+	document.getElementById("tablep").style.display="block";
+	document.getElementById("tablec").style.display="none";
 	document.getElementById("ccycletable").style.display="none";
 	document.getElementById("ccycle").style.display="none";
 	document.getElementById("result").style.display="none";
@@ -26,8 +19,8 @@ function disapear1()
 }
 function disapear2()
 {
-	document.getElementById("marksccycle1").style.display="block";
-	document.getElementById("markspcycle1").style.display="none";
+	document.getElementById("tablec").style.display="block";
+	document.getElementById("tablep").style.display="none";
 	document.getElementById("ccycletable").style.display="none";
 	document.getElementById("pcycle").style.display="none";
 	document.getElementById("result").style.display="none";
@@ -44,8 +37,8 @@ function disapear2()
 }
 function disapear3()
 {
-	document.getElementById("markspcycle1").style.display="none";
-	document.getElementById("markspcycle1").style.display="none";
+	document.getElementById("tablep").style.display="none";
+	document.getElementById("tablep").style.display="none";
 	document.getElementById("pcycle").style.display="none";
 	document.getElementById("ccycle").style.display="none";
 	document.getElementById("navbutton1").style.backgroundColor="black";
@@ -68,7 +61,7 @@ function entera()
 		alert("INVALID ENTRY");
 		document.getElementById("math1ext").value=' ';
 	    document.getElementById("math1int").value=' ';
-		
+
 	}
 	else
 	{
@@ -77,8 +70,8 @@ function entera()
 	    document.getElementById("math1ext").disabled=true;
 	    document.getElementById("math1int").disabled=true;
 	}
-	
-	
+
+
 }
 function enterb()
 {
@@ -97,7 +90,7 @@ function enterb()
 	document.getElementById("physicext").disabled=true;
 	document.getElementById("physicint").disabled=true;
 	}
-	
+
 }
 function enterc()
 {
@@ -116,7 +109,7 @@ function enterc()
 	document.getElementById("mechext").disabled=true;
 	document.getElementById("mechint").disabled=true;
 	}
-	
+
 }
 function enterd()
 {
@@ -135,7 +128,7 @@ function enterd()
 	document.getElementById("elecext").disabled=true;
 	document.getElementById("elecint").disabled=true;
 	}
-	
+
 }
 function entere()
 {
@@ -154,7 +147,7 @@ function entere()
 	document.getElementById("civilext").disabled=true;
 	document.getElementById("civilint").disabled=true;
 	}
-	
+
 }
 function enterf()
 {
@@ -173,7 +166,7 @@ function enterf()
 	document.getElementById("phylext").disabled=true;
 	document.getElementById("phylint").disabled=true;
 	}
-	
+
 }
 function enterg()
 {
@@ -192,7 +185,7 @@ function enterg()
 	document.getElementById("workext").disabled=true;
 	document.getElementById("workint").disabled=true;
 	}
-	
+
 }
 function enterh()
 {
@@ -211,7 +204,7 @@ function enterh()
 	document.getElementById("math2ext").disabled=true;
 	document.getElementById("math2int").disabled=true;
 	}
-	
+
 }
 function enteri()
 {
@@ -230,7 +223,7 @@ function enteri()
 	document.getElementById("chemext").disabled=true;
 	document.getElementById("chemint").disabled=true;
 	}
-	
+
 }
 function enterj()
 {
@@ -249,7 +242,7 @@ function enterj()
 	document.getElementById("caedext").disabled=true;
 	document.getElementById("caedint").disabled=true;
 	}
-	
+
 }
 function enterk()
 {
@@ -268,7 +261,7 @@ function enterk()
 	document.getElementById("elnext").disabled=true;
 	document.getElementById("elnint").disabled=true;
 	}
-	
+
 }
 function enterl()
 {
@@ -287,7 +280,7 @@ function enterl()
 	document.getElementById("pcdext").disabled=true;
 	document.getElementById("pcdint").disabled=true;
 	}
-	
+
 }
 function enterm()
 {
@@ -306,7 +299,7 @@ function enterm()
 	document.getElementById("chelext").disabled=true;
 	document.getElementById("chelint").disabled=true;
 	}
-	
+
 }
 function entern()
 {
@@ -349,7 +342,7 @@ function calculate()
 	var i;
 	for(i=0;i<14;i++)
 	{
-		if(marks[i]>=90)
+		if(marks[i]>90)
 		{grade[i]=10;}
 		else if((marks[i]>=80)&&(marks[i]<90))
 		{grade[i]=9;}
@@ -415,15 +408,18 @@ document.getElementById("grdm1").innerHTML=grade[0];
 	sgpac=0;
 	sump=points[0]+points[1]+points[2]+points[3]+points[4]+points[5]+points[6];
 	sumc=points[7]+points[8]+points[9]+points[10]+points[11]+points[12]+points[13];
-    sgpap=sump/24;
+  sgpap=sump/24;
+	sgpap=sgpap.toFixed(2);
 	sgpac=sumc/24;
+	sgpac=sgpac.toFixed(2);
 	document.getElementById("result1").value=sgpap;
 	document.getElementById("result3").value=sgpac;
 	document.getElementById("result1").disabled=true;
 	document.getElementById("result3").disabled=true;
 	var cgpa;
 	cgpa=0;
-	cgpa=(24*sgpap)+(24*sgpap)/48;
+	cgpa=((24*sgpap)+(24*sgpac))/48;
+	S
 	document.getElementById("result2").value=cgpa;
 	document.getElementById("result2").disabled=true;
-}	
+}

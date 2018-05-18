@@ -1,29 +1,27 @@
 <DOCTYPE! html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="Astylesheet.css">
-    <script src="scriptfile.js"></script>
-	<font id="header">Webapp</font>
-	<font id="header1">Sgpa Converter</font>
+<title>WebbApp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body id="backleft">
-    
-    <p id="headed">
-	</p>
-	
-    <div id="nav">
-	<table>
-	 <ul>
-	 <li><button id="navbutton1" onclick="disapear1()"><font>P-Cycle</font></button></li>
-	 <li><button id="navbutton2" onclick="disapear2()"><font>C-Cycle</font></button></li>
-	 <li><button id="navbutton3" onclick="disapear3()"><font>Result Form</font></button></li>
-	 </ul>
-	</table>
-	</div>
-    <p id="main">
-	<p id="pcycle">
-	<p id="markspcycle1">
-	<table id="table3">
+<body>
+    <div id="back">
+        <header>
+		<font id=heading>WebApp</font>
+		<font id=headinga>SGPA Converter</font>
+		</header>
+        <div id="nav">
+		    <table>
+	            <ul id="unlist">
+	            <li id="list"><button id="navbutton1" onclick="disapear1()"><font>P-Cycle</font></button></li>
+	            <li id="list"><button id="navbutton2" onclick="disapear2()"><font>C-Cycle</font></button></li>
+	            <li id="list"><button id="navbutton3" onclick="disapear3()"><font>Result Form</font></button></li>
+	            </ul>
+	        </table>
+	    </div>
+	<div id="pcycle">
+	<table id="tablep">
 	<tr height=70%>
 	 <th id="A" height=70%>Subject        </th>
 	 <th id="B" height=70%>External marks </th>
@@ -35,7 +33,7 @@
 	 <td><input id="math1ext" ></input></td>
 	 <td><input id="math1int"></input></td>
 	 <td><button id="buttonmath1" type=submit onclick="entera()">SUBMIT</button>
-	</tr> 
+	</tr>
 	<tr height=70%>
 	 <td><font id="common2">Physics:</font></td>
 	 <td><input id="physicext" ></input></td>
@@ -73,11 +71,9 @@
 	 <td margin=0;padding=0;><button id="buttonwork" onclick="enterg()">SUBMIT</button></td>
 	</tr>
 	</table>
-	</p>
-	</p>
-	<p id="ccycle">
-	<p id="marksccycle1">
-	<table id="table4">
+    </div>
+	<div id="ccycle">
+	<table id="tablec">
 	<tr >
 	 <th id="A" >Subject        </th>
 	 <th id="B" >External marks </th>
@@ -89,7 +85,7 @@
 	 <td ><input id="math2ext"></input></td>
 	 <td ><input id="math2int"></input></td>
 	 <td  margin=0;padding=0;><button id="buttonmath1" onclick="enterh()">SUBMIT</button>
-	</tr> 
+	</tr>
 	<tr>
 	 <td><font>Chemistry:</font></td>
 	 <td><input id="chemext"></input></td>
@@ -126,10 +122,8 @@
 	 <td margin=0;padding=0;><button id="buttonwork" onclick="entern()">SUBMIT</button></td>
 	</tr>
 	</table>
-	</p>
-	</p>
-	<p>
-	<p id="result">
+	</div>
+	<div id="result">
 	<font id="font1">P-Cycle</font>
 	<font id="font2">C-Cycle</font>
 	<font id="font3">sgpa(P-cycle):</font>
@@ -139,8 +133,7 @@
 	<font id="font4">cgpa:</font>
 	<input id="result2" value=0></input>
 	<button id="resultbutton" onclick="calculate()">Calculate</button>
-<div  id="pcycletable" margin=0 padding=0>
-    <table style="width:100%" ></table>
+<div  id="pcycletable">
     <table id="table2">
       <tr>
         <th>Subject</th>
@@ -223,13 +216,12 @@
         <td>-</td>
 
       </tr>
-    
+
 
     </table>
     </div>
-	
-<div style="overflow-auto;" id="ccycletable">
-    <table style="width:100%" ></table>
+
+<div id="ccycletable">
     <table id="table1">
       <tr>
         <th>Subject</th>
@@ -315,26 +307,10 @@
 
     </table>
     </div>
-	
-   </p>
-  </p>
-  
-	
+	</div>
+		<div id="layout"></div>
+    <footer>
+
+    </footer>
+    </div>
 </body>
-<footer>
-    <p id="footer">
-    <font id="functext1">Feedback form:</font>
-      <p id="feedbackform">
-       <p id="namefeed">Name:</p>
-       <input type=text id="text1">
-       <p id="namefeed1">Email_id:</p>
-       <input type=emailid id="text2">
-       <p id="namefeed2">Descrpition:</p>
-       <input type=text id="text3">
-       <button id="button1" onclick="myfunction()">Submit</button>
-       </p>
-      <font id="functext">&copy Webapp ,Inc.</font>
-    </p>
-    <font id="fotterpara">
-</footer >
-</html>

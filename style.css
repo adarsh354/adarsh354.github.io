@@ -1,0 +1,365 @@
+body
+{
+	background-color:#f8f8ff;
+}
+
+#back
+{
+	width:80%;
+	margin:2% auto 2% auto;
+	padding:0;
+}
+
+header
+{
+	height:150px;
+	background-color:#4caf50;
+	margin:0 0 0 0;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+#nav
+{
+	height:58px;
+	margin:0 0 0 0;
+	background-color:black;
+
+}
+#layout
+{
+	height:600px;
+	background-color:#F8F8FF;
+	margin:0 0 0 0;
+}
+footer
+{
+	height:300px;
+	background-color:#4caf50;
+	margin:0 0 0 0;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+#heading
+{
+	position:relative;
+	background-color:#4caf50;
+	height:90%;
+	top:5%;
+	left:1%;
+	color:#FFFFFF;
+	font-size:500%;
+	font-weight:50px;
+}
+#headinga{
+    position:relative;
+	background-color:#4caf50;
+	top:30%;
+	left:45%;
+	color:#FFFFFF;
+	font-size:200%;
+	font-weight:50px;
+}
+#navbutton1{
+	height:55px;
+	width:150px;
+	background-color:black;
+	border-style:solid;
+	border-color:white;
+	font-weight:bold;
+	color:White;
+	font-size:15px;
+}
+#navbutton2{
+
+	height:55px;
+	width:150px;
+	background-color:black;
+	border-style:solid;
+	border-color:white;
+	font-weight:bold;
+	color:White;
+	font-size:15px;
+}
+#navbutton3{
+
+	height:55px;
+	width:150px;
+	background-color:black;
+	border-style:solid;
+	border-color:white;
+	font-weight:bold;
+	color:White;
+	font-size:15px;
+
+}
+#unlist{
+	position:relative;
+	top:8%;
+	left:0.3%;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+
+}
+#list{
+	display:inline;
+}
+#pcycle{
+	margin:0 auto 0 auto;
+	padding:0;
+	position:absolute;
+	height:605px;
+	top:204px;
+	background-color:white;
+	width:79.1%;
+	margin:2% auto 2% auto;
+	padding:0;
+	display:none;
+}
+#ccycle{
+	margin:0 auto 0 auto;
+	padding:0;
+	position:absolute;
+	height:605px;
+	top:204px;
+	background-color:white;
+	width:79.1%;
+	margin:2% auto 2% auto;
+	padding:0;
+	display:none;
+}
+#result{
+	margin:0 auto 0 auto;
+	padding:0;
+	position:absolute;
+	height:605px;
+	top:204px;
+	background-color:white;
+	width:79.1%;
+	margin:2% auto 2% auto;
+	padding:0;
+	display:none;
+}
+#table1{
+	position:absolute;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    border: 1px solid black;
+}
+
+#ccycletable{
+	position:absolute;
+	top:75px;
+	left:48.5%;
+	display:none;
+	width:55%;
+}
+#pcycletable{
+	position:absolute;
+	top:75px;
+	left:30px;
+	display:none;
+	width:55%;
+}
+#table2{
+	position:absolute;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid black;
+}
+#font1{
+	position:absolute;
+	font-size:50px;
+	left:18%;
+}
+#font2{
+	position:absolute;
+	font-size:50px;
+	left:65%;
+}
+#font3{
+	position:absolute;
+	font-size:30px;
+	left:8%;
+	bottom:19%;
+}
+#font4{
+	position:absolute;
+	font-size:50px;
+	left:33%;
+	bottom:7%;
+}
+#result1{
+	position:absolute;
+	height:7%;
+	left:25%;
+	bottom:19%;
+	disabled:true;
+
+}
+#result2{
+	position:absolute;
+	height:10%;
+	left:45%;
+	bottom:6%;
+	disabled:true;
+}
+#font5{
+	position:absolute;
+	font-size:30px;
+	left:57%;
+	bottom:19%;
+}
+#result3{
+	position:absolute;
+	height:7%;
+	left:75%;
+	bottom:19%;
+	disabled:true;
+}
+#resultbutton{
+	position:absolute;
+	height:8%;
+	width:15%;
+	left:75%;
+	bottom:6%;
+	font-size:20px;
+	display:none;
+}
+th,td {
+    text-align: left;
+    padding: 8px;
+	height:40px
+
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+#tablep{
+	width:1000px;
+	position:relative;
+	margin:50px auto 0 auto;
+	border-style:solid;
+	border-width:50px;
+	border-color:black;
+	font-size:16px;
+	border:1px solid black;
+}
+#tablec{
+	width:1000px;
+	position:relative;
+	margin:50px auto 0 auto;
+	border-style:solid;
+	border-width:50px;
+	border-color:black;
+	font-size:16px;
+	border:1px solid black;
+}
+
+#A,#B,#C,#D{
+	width:29.5%;
+	height:50px;
+}
+#math1ext,#physicext,#mechext,#elecext,#civilext,#math1int,#physicint,#mechint,#elecint,#civilint,#phylext,#workext,#phylint,#workint,#math2ext,#math2int,#chemext,#chemint,#mathint,#caedext,#caedint,#elnext,#elnint,#pcdext,#pcdint,#chelext,#chelint,#pclext,#pclint
+{
+    width:70%
+}
+#buttonmath1,#buttonphysics,#buttonmech,#buttonelec,#buttoncivil,#buttonphyl,#buttonwork
+{
+	height:90%;
+	width:90%;
+}
+#functext{
+	position:relative;
+	bottom:-68.5%;
+	left:150px;
+	font-size:20px;
+	color:#e8ff26;
+
+
+}
+#functext1{
+	position:relative;
+	bottom:10px;
+	left:1.5%;
+	font-size:30px;
+	color:#e8ff26;
+
+}
+#feedbackform{
+	position:relative;
+	left:150px;
+	bottom:-62.5%;
+	height:31%;
+	width:35%;
+	margin:0%2%0%1%;
+	background-color:white;
+	border-style:solid;
+	border-color:black;
+}
+#namefeed{
+	position:relative;
+	bottom:-40%;
+	left:180px;
+	font-size:20px;
+	color:#3b52d4;
+}
+#text1{
+	height:30px;
+	width:150px;
+	position:relative;
+	bottom:-245px;
+	left:300px;
+	border-style:rounded;
+	border-color:#999;
+	border-radius:5px;
+}
+#text2{
+	height:30px;
+	width:250px;
+	position:relative;
+	bottom:-290px;
+	left:300px;
+	border-style:rounded;
+	border-color:#999;
+	border-radius:5px;
+}
+#namefeed1{
+	position:relative;
+	bottom:-305px;
+	left:180px;
+	font-size:20px;
+	color:#3b52d4;
+}
+#text3{
+	height:90px;
+	width:250px;
+	position:relative;
+	bottom:-400px;
+	left:300px;
+	border-style:rounded;
+	border-color:#999;
+	border-radius:5px;
+}
+#namefeed2{
+	position:relative;
+	bottom:-355px;
+	left:180px;
+	font-size:20px;
+	color:#3b52d4;
+}
+#button1{
+
+	position:relative;
+	height:27px;
+	bottom:-400px;
+	left:553px;
+	font-size:17px;
+	font-style:bold;
+	border-style:rounded;
+	border-color:#999;
+	border-radius:5px;
+}
