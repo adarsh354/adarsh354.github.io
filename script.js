@@ -370,7 +370,7 @@ function calculate()
 	points[8]=4*grade[8];
 	points[9]=4*grade[9];
 	points[10]=4*grade[10];
-	points[11]=4*grade[11];
+	points[11]=4*grade[11]; 
 	points[12]=2*grade[12];
 	points[13]=2*grade[13];
 document.getElementById("grdm1").innerHTML=grade[0];
